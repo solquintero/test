@@ -1,138 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Portafolio.la</title>
-        <meta charset="UTF-8"/>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
-        <meta name="viewport" content="width=device-width, maximum-scale=1">
-        <link rel="stylesheet" href="static/css/normalize.css">
-        <link rel="stylesheet" href="static/css/estilos.css">
-    </head>
-    <body>
-        
-        <header id="yo" class="Header">
-            <nav class="MainMenu">
-                <ul class="MainMenu-list">
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#yo">Yo</a>
-                    </li>
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#perfil">Perfil</a>
-                    </li>
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#trabajo">Trabajo</a>
-                    </li>
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-            <figure class="Header-imageContainer">
-                <img src="static/images/avatar.jpg" alt="Imagen personal" class="Header-image"/>
-                <figcaption class="Header-imageDescription">
-                    <a class="Header-link" href="http://twitter.com/leonidasesteban/" target="_black">@solquinterot</a>
-                </figcaption>
-            </figure>
-            <p class="Header-name" >Sol Quintero</p>
-        </header>
+  <head>
+    <title>Sol Quintero - Estratega Digital</title>
+    <meta charset="UTF-8"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/estilos.css">
+  </head>
+  <body>
+    <header id="yo" class="Header">
+      <nav class="MainMenu">
+        <ul class="MainMenu-list">
+          <li class="MainMenu-item">
+            <a class="MainMenu-link is-selected" href="index.html">Trabajo</a>
+          </li>
+          <li class="MainMenu-item">
+            <a class="MainMenu-link" href="">Blog</a>
+          </li>
+          <li class="MainMenu-logo">
+            <a href="http://solquintero.com">
+              <img src="static/images/sol-quintero-logo-white.png" alt="Sol Quintero - Estratega digital logo">
+            </a>
+          </li>
+          <li class="MainMenu-item">
+            <a class="MainMenu-link" href="">Sobre mi</a>
+          </li>
+          <li class="MainMenu-item">
+            <a class="MainMenu-link" href="mailto:solquintero2113@gmail.com">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <ul class="WorkMenu">
+      <li>
+        <a class="WorkMenu-link is-active" href="#estratega-digital">Estratega Digital</a>
+      </li>
+      <li>
+        <a class="WorkMenu-link" href="#analista-de-datos">Analista de Datos</a>
+      </li>
+      <li>
+        <a class="WorkMenu-link" href="#content-marketing">Content Marketing</a>
+      </li>
+    </ul>
+    <section class="WorkSection" id="estratega-digital">
+      <div class="overlay"></div>
+      <img src="static/images/estratega-digital.jpeg" alt="Estratega Digital">
+    </section>
+    <section class="WorkSection" id="analista-de-datos">
+      <div class="overlay"></div>
+      <img src="static/images/analista-datos.jpeg" alt="Analista de datos">
+    </section>
+    <section class="WorkSection" id="content-marketing">
+      <div class="overlay"></div>
+      <img src="static/images/content-marketing.jpeg" alt="Content Marketing">
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
 
-        <section id="perfil" class="Profile">
-            <div class="u-containerDefault">
-                <h2 class="Profile-title u-title">Mi perfil</h2>
-                <p class="Profile-description">
-                    <strong>Hola!</strong> si <span class="Profile-span">llegaste</span> hasta aqui puedes ver mi portafolio y <em>contactarme</em>
-                </p>
-                <a class="Profile-link" href="http://twitter.com/solquinterot/" target="_blank">@solquinterot</a>
-                <a class="Profile-link" href="http://facebook.com/solquinterot/" target="_blank">Leonidas Esteban</a>
-                <a class="Profile-link" href="http://github.com/solquinterot/" target="_blank">solquinterot</a>
-            </div>
-        </section>
-        <section class="Slides">
-            <div class="Slides-container">
-                <ul class="rslides">
-                    <li><img src="static/images/mexico.jpg" alt=""></li>
-                    <li><img src="static/images/colombia.jpg" alt=""></li>
-                    <li><img src="static/images/peru.jpg" alt=""></li>
-                </ul>
-            </div>
-        </section>
-        <section id="trabajo" class="Work">
-            <div class="u-containerDefault">
-                <h2 class="Work-title u-title">Mi trabajo</h2>
-            </div>
-            
-            <article class="Work-item">
-                <figure class="Work-imageContainer">
-                    <img class="Work-image" src="static/images/mejorandola.jpg" alt="Es la descripcion de mi imagen">
-                    <figcaption class="Work-description">Website de mejorando.la</figcaption>
-                </figure>
-            </article>
-            <article class="Work-item">
-                <figure class="Work-imageContainer">
-                    <img class="Work-image" src="static/images/proyecto.jpg" alt="Es la descripcion de mi imagen">
-                    <figcaption class="Work-description">Website de mejorando.la</figcaption>
-                </figure>
-            </article>
-            <article class="Work-item">
-                <figure class="Work-imageContainer">
-                    <img class="Work-image" src="static/images/proyecto.jpg" alt="Es la descripcion de mi imagen">
-                    <figcaption class="Work-description">Website de mejorando.la</figcaption>
-                </figure>
-            </article>
-            <article class="Work-item">
-                <figure class="Work-imageContainer">
-                    <img class="Work-image" src="static/images/proyecto.jpg" alt="Es la descripcion de mi imagen">
-                    <figcaption class="Work-description">Website de mejorando.la</figcaption>
-                </figure>
-            </article>
-            <article class="Work-item">
-                <figure class="Work-imageContainer">
-                    <img class="Work-image" src="static/images/proyecto.jpg" alt="Es la descripcion de mi imagen">
-                    <figcaption class="Work-description">Website de mejorando.la</figcaption>
-                </figure>
-            </article>
-            <article class="Work-item">
-                <figure class="Work-imageContainer">
-                    <img class="Work-image" src="static/images/proyecto.jpg" alt="Es la descripcion de mi imagen">
-                    <figcaption class="Work-description">Website de mejorando.la</figcaption>
-                </figure>
-            </article>
-        </section>
-        <footer id="contacto" class="Footer">
-            <div class="Footer-left">
-                <h3 class="Footer-title">Contacto</h3>
-                <p class="Footer-description">Si tienes una sugerencia o quieres trabajar conmigo ponte en contacto con este formulario</p>
-            </div>
-            <form class="Footer-form">
-                <input class="Footer-formInput"  type="text" placeholder="Nombre"/>
-                <input class="Footer-formInput" type="email" placeholder="Email"/>
-                <textarea class="Footer-textarea" placeholder="Motivo"></textarea>
-                <button type="submit" class="Footer-button"> Contactarme </button>
-            </form>
-        </footer>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="static/js/vendors/responsiveslides.min.js"></script>
-    <script src="static/js/vendors/retina.min.js"></script>
     <script>
-        $(document).on('ready', ready);
-
-        function ready(){
-            var media = window.matchMedia("(max-width: 768px)");
-
-            var validateQuery = function(){
-                if(media.matches){
-                    console.log('se cumple la condición');
-                }else{
-                    console.log('no se cumple la condición');
-                }
-            };
-            validateQuery();
-            media.addListener(validateQuery);
-        }
-
-
-         $(".rslides").responsiveSlides();
+      $(document).ready(function(){
+        $('body').localScroll();
+        var $workButtons = $('.WorkMenu-link');
+        $workButtons.on('click', function(event) {
+          $workButtons.removeClass('is-active');
+          $(this).addClass('is-active');
+        });
+      })
 
     </script>
-    </body>
+  </body>
 </html>
