@@ -30,13 +30,16 @@ body
     display inline-block
 
   &-logo
-    width 64px
-    height 64px
+    width 30px
+    height 30px
     margin 0 1em
     border-radius 50%
     border 2px solid rgba(white, .5)
     transition .2s
     background rgba(black, .7)
+    +from(768px)
+      width 64px
+      height 64px
     &:hover
       border-color rgba(white, .8)
       box-shadow 0 0 5px white
@@ -53,13 +56,20 @@ body
   &-link
     color white
     text-decoration none
-    margin 0 1em
-    font-size .7em
+    font-size .6em
     relative()
-    padding .5em 0
     text-transform uppercase
     letter-spacing 2px
     font-weight bold
+    margin 0 .5em
+    padding .2em 0
+    white-space no-wrap
+    
+    +from(768px)
+      margin 0 1em
+      padding .5em 0
+      font-size .7em
+      
     &:after
       width 0px
       height 1px
@@ -130,8 +140,10 @@ body
     &:hover
       color white
     &.is-active
-      font-size 4em
       font-family "Libre Baskerville"
       color white
       text-transform none
       font-weight normal
+      font-size 2em
+      +from(768px)
+        font-size 4em
