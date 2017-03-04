@@ -1,152 +1,27 @@
-@import "nib"
+@require "nib"
+@require "vars.styl"
+@require "WorkMenu.styl"
+@require "WorkSection.styl"
+@require "MainMenu.styl"
+@require "About.styl"
 
 body
   background black
   color white
-  // font-family: 'Alegreya', serif;
   text-rendering optimizeLegibility
   -webkit-font-smoothing antialiased
-
-.MainMenu
-  background transparent
-  text-align center
-  height 3.75em
-  position fixed
-  left 0
-  right 0
-  top 0
-  z-index 10
-  padding 1em 0
   font-family "Roboto"
-  &-list
-    margin 0
-    padding 0
-    display flex
-    justify-content center
-    align-items center
-    list-style none
+  &.is-about
+    background white url('../images/texture.png')
+    color $color-black
+    .MainMenu
+      background url('../images/texture.png')
+      &-link
+        color $color-black
+        &:after
+        &:before
+          background $color-black
 
-  &-item
-    display inline-block
 
-  &-logo
-    width 30px
-    height 30px
-    border-radius 50%
-    border 2px solid rgba(white, .5)
-    transition .2s
-    background rgba(black, .7)
-    margin 0 .5em
-    
-    +from(768px)
-      width 64px
-      height 64px
-      margin 0 1em
-      
-    &:hover
-      border-color rgba(white, .8)
-      box-shadow 0 0 5px white
-    a
-      display flex
-      justify-content center
-      align-items center
-      width inherit
-      height inherit
-    img
-      width 80%
-      height 80%
-      display block
-  &-link
-    color white
-    text-decoration none
-    font-size .6em
-    relative()
-    text-transform uppercase
-    letter-spacing 2px
-    font-weight bold
-    margin 0 .5em
-    padding .2em 0
-    white-space no-wrap
-    
-    +from(768px)
-      margin 0 1em
-      padding .5em 0
-      font-size .7em
-      
-    &:after
-      width 0px
-      height 1px
-      background white
-      content ""
-      color blue
-      transition .2s
-      absolute(bottom left 50%)
-    &:before
-      width 0px
-      height 1px
-      background white
-      content ""
-      color blue
-      transition .2s
-      absolute(bottom right 50%)
-    &.is-selected
-    &:hover
-      &:after
-      &:before
-        width 50%
 
-.overlay
-  z-index 1
-  absolute(left right bottom top)
-  background rgba(black, .4)
 
-.WorkSection
-  height 100vh
-  relative()
-  z-index 1
-  img
-    height inherit
-    width 100%
-    object-fit cover
-  &-content
-    z-index 2
-    relative()
-    
-.WorkMenu
-  fixed(bottom left right)
-  z-index 2
-  margin 0 auto
-  list-style none
-  padding 0
-  li
-    display block
-    relative()
-    margin-bottom 30px
-    text-align center
-    &:after
-      content ""
-      height 20px
-      width 1px
-      background rgba(white, .5)
-      display block
-      absolute(top 105% left 50%)
-    &:last-child
-      &:after
-        display none
-  a
-    color rgba(white, .5)
-    text-decoration none
-    font-size .8em
-    font-weight bold
-    transition .3s
-    text-transform uppercase
-    &:hover
-      color white
-    &.is-active
-      font-family "Libre Baskerville"
-      color white
-      text-transform none
-      font-weight normal
-      font-size 2em
-      +from(768px)
-        font-size 4em
