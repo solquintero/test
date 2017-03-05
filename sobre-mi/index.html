@@ -173,7 +173,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
       $('.contact-button').on('click', function(){
-        _gaq.push(['_trackEvent', 'contacto' , 'click' , $(this).data('type')]);
+        ga('sent', 'event', 'contacto' , 'click' , $(this).data('type')]);
       });
     </script>
   </body>

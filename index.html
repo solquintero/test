@@ -125,7 +125,7 @@
           }
         });
         $('.contact-button').on('click', function(){
-          _gaq.push(['_trackEvent', 'contacto' , 'click' , $(this).data('type')]);
+          ga('sent', 'event', 'contacto' , 'click' , $(this).data('type')]);
         });
       })
 
