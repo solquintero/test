@@ -67,10 +67,10 @@
             </a>
           </li>
           <li class="MainMenu-item">
-            <a class="MainMenu-link" href="sobre-mi.html">Sobre mi</a>
+            <a class="MainMenu-link" href="sobre-mi/">Sobre mi</a>
           </li>
           <li class="MainMenu-item">
-            <a class="MainMenu-link" href="mailto:solquintero2113@gmail.com">Contacto</a>
+            <a class="MainMenu-link contact-button" data-type="header" href="mailto:solquintero2113@gmail.com">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -123,6 +123,9 @@
             $workButtons[--itemSelected].classList.add('is-active');
             viewportHeight = viewportHeight - window.innerHeight;
           }
+        });
+        $('.contact-button').on('click', function(){
+          _gaq.push(['_trackEvent', 'contacto' , 'click' , $(this).data('type')]);
         });
       })
 
